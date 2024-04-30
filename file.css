@@ -6,10 +6,12 @@
 }
 
 nav {
+    width: 100%;
     position: fixed;
     top: 0;
     background-color: #fff;
     height: 100px;
+    z-index: 100;
 }
 
 nav img {
@@ -44,7 +46,7 @@ nav ul li {
     position: absolute;
     align-items: center;
     background-color: #621148;
-    width: 180px;
+    width: 11.25rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border: 1px solid transparent;
@@ -64,7 +66,7 @@ nav ul li {
     display: block;
  }
  
-.dropdown:hover, .dropdown-content2:hover {
+.dropdown:hover .dropdown-content2, .dropdown:hover .dropdown-content1 {
     display: block;
     cursor: pointer;
 }
@@ -72,7 +74,7 @@ nav ul li {
 .right-border {
     border-right: 2px solid #621148;
     height: 22px;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     padding-left: 15px;
     
 }
@@ -86,8 +88,8 @@ nav ul li {
     border-radius: 25px;
     color: #fff;
     margin-top: -20px;
-    font-size: 0.75em;
-    width: 180px;
+    font-size: 0.75rem;
+    width: 11.25rem;
     margin-left: 6px;
 }
 
@@ -99,8 +101,8 @@ nav ul li {
 
 .ellipsis {
     color: #b03b88;
-    margin-top: 30px;
-    font-size: 3em;
+    margin-top: 1.88rem;
+    font-size: 3rem;
 }
 
 .hero {
@@ -110,12 +112,12 @@ nav ul li {
 }
 
 .hero-text {
-    width: 600px;
-    margin-left: 70px;
+    width: 70%;
+    margin-left: 4.34rem;
 }
 
 .hero-text h1 {
-    font-size: 3.4em;
+    font-size: 3.4rem;
     background: linear-gradient(to right, #AC3282 0%,red 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -123,9 +125,25 @@ nav ul li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* SLIDE EFFECT */
+.heroimages-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-images {
+    display: flex;
+    z-index: -100;
+}
+
+.slide {
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+
 .paragraph {
     color: #8b3c71;
-    font-size: 1em;
+    font-size: 1rem;
     padding-bottom: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
@@ -142,11 +160,11 @@ nav ul li {
     border-radius: 25px;
     border: 2px solid transparent;
     padding: 5px;
-    width: 190px;
-    height: 43px;
+    width: 11.9rem;
+    height: 2.7rem;
     color: #fff;
-    font-size: 1.02em;
-    margin-right: 40px;
+    font-size: 1.02rem;
+    margin-right: 2.5rem;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -164,18 +182,18 @@ background-color: #F7951F;
 
 .youtube-icon {
     color: #f32323;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     padding-right: 10px;
 }
 
 .license {
-    margin-left: -50px;
+    margin-left: -3.13rem;
     padding-top: 15px;
     z-index: 1;
 }
 
 .hero-images img {
-    margin-left: -35px;
+    margin-left: -2.19rem;
     z-index: -1;
 }
 
@@ -190,12 +208,12 @@ background-color: #F7951F;
 
 .container-two {
     display: flex;
-    margin-top: 350px;
+    margin-top: 21.9rem;
     background-color: #fef3f4;
     border-radius: 25px;
-    width: 1293px;
-    height: 550px;
-    margin-left: 25px;
+    width: 100%;
+    height: 34.4rem;
+    margin-left: 1.6rem;
 }
 
 .second-image {
@@ -210,14 +228,14 @@ background-color: #F7951F;
 
 .icons-section h2 {
     color: #ed465c;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     padding: 30px 0px 20px 0px;
     margin-left: 80px;
 }
 
 .icons-section p {
     color: #621148;
-    font-size: 1em;
+    font-size: 1rem;
     margin-left: 80px;
 }
 
@@ -236,7 +254,7 @@ background-color: #F7951F;
     width: 135px;
     height: 42px;
     color: #fff;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     cursor: pointer;
     margin-top: 20px;
     margin-right: 60px;
@@ -285,7 +303,7 @@ background-color: #F7951F;
         width: 130px;
         height: 43px;
         color: #fff;
-        font-size: 0.9em;
+        font-size: 0.9rem;
         cursor: pointer;
 }
 
@@ -306,7 +324,7 @@ background-color: #F7951F;
 
 .section-four-texts h2 {
     color: #b03d89;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     padding-bottom: 25px;
     font-weight: 600;
 }
@@ -678,4 +696,10 @@ background-color: #F7951F;
 
 .speech-bubble svg {
     margin-top: 20px;
+}
+
+/* media queries */
+
+@media screen and (max-width:1410px ) {
+    
 }
